@@ -7,8 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'alert') {
-    	message.reply('**[BOT UPDATE]**');
-        message.reply('Welcome everone, I am your new bot and I will try to make this server the best roblox discord sever ever!');
+    	message.reply('**[BOT UPDATE]** - I am your new bot!');
   	}
 });
 
