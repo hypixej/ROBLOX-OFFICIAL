@@ -10,6 +10,13 @@ client.on('message', message => {
     	message.reply('test');
   	}
 });
+client.on('guildMemberAdd' , member => {               //You can Change The Name
+  const channel = member.guild.channels.find('name', 'welcome log');
+  if (!channel) return;
+ channel.send(`Welcome to the server, ${member}`);
+});
+
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
