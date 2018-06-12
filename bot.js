@@ -11,7 +11,7 @@ client.on('message', message => {
   	}
 });
 client.on('guildMemberAdd' , member => {               //You can Change The Name
-  const channel = member.guild.channels.find('name', 'welcome log');
+  const channel = member.guild.channels.find('name', 'welcome');
   if (!channel) return;
  channel.send(`Welcome to the server, ${member}`);
 });
