@@ -7,14 +7,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'alert') {
-    	message.reply('**[BOT UPDATE]** - I am your new bot!');
+    	message.reply('test');
   	}
-    
-client.on('guildMemberAdd', user => {
-client.channels.get('454425518981513238').send('Welcome to my server, ' + user + '!')
-}
-          
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login('NDQ5OTI4MDA1MjA1MjI5NTY4.DgB1mQ.vzbzbenYgquVaD1kezAj7Cye5SY');
+client.login(process.env.BOT_TOKEN);
