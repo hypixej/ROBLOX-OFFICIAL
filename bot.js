@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on("message", (message) => {
   if(message.content === "alert") {
-    message.channel.send("**[BOT UPDATE]** - All Updates are going to be made by the bot now! @here");
+    message.channel.send("**[BOT UPDATE]** %% All Updates are going to be made by the bot now!");
   }
 });
 client.on('guildMemberAdd' , member => {               //You can Change The Name
