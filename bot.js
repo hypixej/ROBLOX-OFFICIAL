@@ -6,9 +6,15 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'alert') {
+    if (message.content === 'r') {
     	message.reply('test');
   	}
+});
+
+client.on("message", (message) => {
+  if(message.content === "alert") {
+    message.channel.send("**[BOT UPDATE]** - All Updates are going to be made by the bot now! @here");
+  }
 });
 client.on('guildMemberAdd' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', 'welcome');
