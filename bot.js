@@ -5,10 +5,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on("ready", () => {
-    client.user.setActivity('by hypixej');
-    // Will show "Playing (Message Here)"
-});
 
 client.on('message', message => {
     if (message.content === 'hello') {
