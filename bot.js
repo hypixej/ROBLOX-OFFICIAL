@@ -5,6 +5,11 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.on("ready", () => {
+    client.user.setActivity('[RO] by hypixej');
+    // Will show "Playing (Message Here)"
+});
+
 client.on('message', message => {
     if (message.content === 'hello') {
     	message.reply('Well Hello there! I have been created by hypixej.');
