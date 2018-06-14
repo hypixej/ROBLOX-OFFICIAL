@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'r') {
-    	message.reply('Hello, hypixej my creator! You good today?');
+    if (message.content === 'hello') {
+    	message.reply('Well Hello there! I have been created by hypixej.');
   	}
 });
 
