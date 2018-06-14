@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on("ready", () => {
-    client.user.setActivity('[RO] by hypixej');
+    client.user.setActivity('by hypixej');
     // Will show "Playing (Message Here)"
 });
 
