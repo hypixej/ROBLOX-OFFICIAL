@@ -27,7 +27,7 @@ client.on('guildMemberAdd' , member => {               //You can Change The Name
 client.on('guildMemberRemove' , member => {               //You can Change The Name
   const channel = member.guild.channels.find('name', 'joinleave');
   if (!channel) return;
- channel.send(` **[New]** ${member} Welcome to ROBLOX OFFICIAL Discord server!`);
+ channel.send(` **[Left]** ${member} Hope we see you soon! ;)`);
 });
 
 
