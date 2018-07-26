@@ -12,6 +12,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'oof') {
+    	message.reply('OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF OOF');
+  	}
+});
+
 client.on("message", (message) => {
   if(message.content === "alert") {
     message.channel.send("**[BOT UPDATE]** \nAll the bot updates will be made by the bot now! ( @here )");
